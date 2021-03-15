@@ -1,0 +1,19 @@
+.container {
+  min-width: $small;
+  max-width: $l-end;
+  padding: 0 80px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $m-end) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 0 20px;
+
+    &--card {
+      padding: 0;
+    }
+  }
+}
