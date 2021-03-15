@@ -8,23 +8,23 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="container">
-    <section class="news">
-      <h1>Мой замечательный сайт</h1>
-      <ul class="news__list"></ul>
-    </section>
-  </div>
+<div class="container">
+  <section class="news">
+    <h1>Мой замечательный сайт</h1>
+    <ul class="news__list"></ul>
+  </section>
+</div>
 <template id="pin">
-  <button class="pin">
-    <p class="pin__text"></p>
-  </button>
+  <button class="pin"></button>
 </template>
 <template id="news-element">
-  <li class="news__item news-card">
+  <li class="news__item news-card" tabindex="0">
     <h2 class="news-card__heading">Щенята и фронтенд, прорыв в IT</h2>
-    <span class="news-card__author">Василий Пупкин</span>
-    <time class="news-card__time" datetime="2011-03-15 19:00">15 марта</time>
     <a class="news-card__excerpt">Подробнее</a>
+    <div class="news-card__layout">
+      <span class="news-card__author">Василий Пупкин</span>
+      <time class="news-card__time" datetime="2011-03-15 19:00">15 марта</time>
+    </div>
   </li>
 </template>
 <script src="./js/data.js"></script>
