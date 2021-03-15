@@ -5,7 +5,7 @@ export const getNewsFeed = () => {
   let fragment = document.createDocumentFragment();
   for (let i = 0; i < NEWS_LIST.length; i++) {
     const news = newsTemplate.cloneNode(true);
-    news.querySelector('h3').textContent = NEWS_LIST[i].title;
+    news.querySelector('h2').textContent = NEWS_LIST[i].title;
     news.querySelector('span').textContent = NEWS_LIST[i].author;
     const date = NEWS_LIST[i].data.split(' ');
     news.querySelector('time').datetime = date[0];
