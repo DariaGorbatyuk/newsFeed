@@ -16,6 +16,8 @@
   overflow-x: scroll;
   padding: 30px 5px 30px 35px;
   position: relative;
+  scrollbar-color: white rgb(66, 66, 66);
+  scrollbar-width: auto;
 
   &::-webkit-scrollbar {
     height: 16px;
