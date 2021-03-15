@@ -28,4 +28,4 @@ const NEWS_LIST = [{
   },
 ];
 
-export {NEWS_LIST}
+export { NEWS_LIST}

@@ -3,9 +3,8 @@ import {getNewsFeed} from './newsFeed.js';
 
 
 const start = () => {
-  const container = document.querySelector('.news');
   const pin = getPin();
-  container.appendChild(pin);
+  document.querySelector('body').appendChild(pin);
   pin.addEventListener('click', getNewsFeed);
 };
 

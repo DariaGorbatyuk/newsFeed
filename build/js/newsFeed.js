@@ -13,8 +13,8 @@ export const getNewsFeed = () => {
     news.querySelector('a').href = NEWS_LIST[i].link;
     news.dataset.status = NEWS_LIST[i].status;
     fragment.appendChild(news);
-    console.log(fragment.textContent);
   }
   const newsList = document.querySelector('.news__list');
+  newsList.setAttribute('style', 'display: flex');
   newsList.appendChild(fragment);
 };

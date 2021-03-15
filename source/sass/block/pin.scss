@@ -9,7 +9,7 @@
   color: black;
   padding: 10px 20px;
   right: 80px;
-  bottom: 0;
+  top: 85vh;
   border: 1px solid transparent;
   font-weight: 600;
   font-size: 20px;
@@ -19,7 +19,7 @@
   transition: all 400ms;
 
   &:hover,
-  &:focus{
+  &:focus {
     outline: none;
     transform: scale(1.03) rotate(360deg);
   }

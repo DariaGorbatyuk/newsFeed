@@ -10,23 +10,21 @@
 }
 
 .news__list {
-  display: flex;
+  display: none;
   list-style: none;
   margin: 0;
   overflow-x: scroll;
   padding: 30px 5px 30px 35px;
   position: relative;
 
-/*  &::after {
-    @include pseudo($pos: fixed);
-    @include size(5px, 350px);
-    background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, purple, red);
-    right: 0;
-    border: 1px solid transparent;
+  &::-webkit-scrollbar {
+    height: 16px;
+    background-color: white;
     border-radius: 25px;
-  }*/
-}
+  }
 
-.news__item {
-
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+    border-radius: 25px;
+  }
 }
