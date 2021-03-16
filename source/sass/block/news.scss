@@ -11,12 +11,12 @@
 
 .news__list {
   display: none;
+  position: relative;
   list-style: none;
   margin: 0;
   overflow-x: scroll;
   padding: 30px 5px 30px 35px;
-  position: relative;
-  scrollbar-color: white rgb(66, 66, 66);
+  scrollbar-color: $white $scroll;
   scrollbar-width: auto;
 
   &::-webkit-scrollbar {
@@ -26,7 +26,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgb(66, 66, 66);
+    background-color: $scroll;
     border-radius: 25px;
   }
 
