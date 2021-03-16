@@ -9,20 +9,20 @@
       'title': 'Новости в сайтостроении - сайт создается сам пока вы отдыхаете',
       'author': 'Генадий Шишковидзе',
       'data': '2011-02-10 19:00',
-      'link': 'https://htmlacademy.ru/blog/boost/tools/time-trackers',
+      'link': 'https://htmlacademy.ru/study',
     },
     {
       'title': 'Хотите стать гением фронтенда? Просто пейте три ложки в день...',
       'author': 'Елизавета Хвостонога',
       'data': '2011-02-23 15:00',
-      'link': 'https://htmlacademy.ru/blog/boost/tools/time-trackers',
+      'link': 'https://bipbap.ru/krasivye-kartinki/kartinki-smeshnye-krasivye-i-milye-pro-kotyat.html',
     },
 
     {
       'title': 'Лучшая среда разработки, мнение специалистов',
       'author': 'Света Могучая',
       'data': '2011-03-03 10:00',
-      'link': 'https://htmlacademy.ru/blog/boost/tools/time-trackers',
+      'link': 'https://ru.depositphotos.com/stock-photos/%D1%85%D0%BE%D0%BC%D1%8F%D0%BA.html',
     },
     {
       'title': 'Как заработать на frontend 100 миллионов за 30 минут',
