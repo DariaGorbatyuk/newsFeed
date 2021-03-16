@@ -1,10 +1,8 @@
-(()=>{
-  const start = () => {
-    const pin = window.pin.get();
-    document.querySelector('body').appendChild(pin);
-    pin.addEventListener('click', window.newsFeed.get);
-  };
+const start = () => {
+  const pin = window.pin.get();
+  document.querySelector('body').appendChild(pin);
+  pin.addEventListener('click', window.newsFeed.get);
+};
 
-  setTimeout(start, 1000);
-})()
+setTimeout(start, 1000);
 

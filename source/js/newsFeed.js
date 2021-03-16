@@ -1,11 +1,10 @@
-(() => {
   const getNewsItem = (newsTemplate, i) => {
     const news = newsTemplate.cloneNode(true);
     news.querySelector('h2').textContent = window.data.NEWS_LIST[i].title;
     news.querySelector('.news-card__author').textContent = window.data.NEWS_LIST[i].author;
-    const date = window.data.NEWS_LIST[i].data.split(' ');
-    news.querySelector('time').datetime = date[0];
-    news.querySelector('time').textContent = date[1];
+    news.querySelector('time').datetime = window.data.NEWS_LIST[i].datatime;
+    const [day, time] = window.data.NEWS_LIST[i].datatime.split(' ');
+    news.querySelector('time').textContent = `${day} в ${time}`;
     news.querySelector('a').href = window.data.NEWS_LIST[i].link;
     return news;
   };
@@ -34,5 +33,4 @@
   window.newsFeed = {
     get,
   };
-})();
 
