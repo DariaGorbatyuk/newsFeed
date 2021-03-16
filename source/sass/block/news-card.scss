@@ -18,6 +18,7 @@
   &:hover,
   &:focus {
     transform: translate(-15px, -5px) rotate(3deg);
+    outline: none;
   }
 }
 
@@ -25,6 +26,22 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.17;
+}
+
+.news-card__status {
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.17;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &--done {
+    color: $gray;
+    -webkit-text-fill-color: unset;
+    background: none;
+  }
 }
 
 .news-card__layout {
@@ -50,8 +67,15 @@
   line-height: 1.5;
   font-weight: 600;
   margin-top: auto;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  padding: 5px 5px 5px 0;
+  align-self: flex-start;
+  position: relative;
   color: $orange;
-  padding: 5px;
-  padding-left: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgba($orange, 0.7);
+  }
 }

@@ -1,9 +1,14 @@
-import {NEWS_LIST} from './data.js';
+(() => {
+  const get = () => {
+    const pinTemplate = document.querySelector('#pin').content.querySelector('.pin');
+    const pin = pinTemplate.cloneNode(true);
+    pin.textContent = `${window.data.NEWS_LIST.length}`;
+    return pin;
+  };
 
-export const getPin = () => {
-  const pinTemplate = document.querySelector('#pin').content.querySelector('.pin');
-  const pin = pinTemplate.cloneNode(true);
-  pin.textContent = `${NEWS_LIST.length}`;
-  return pin;
-};
+  window.pin = {
+    get
+  }
+})();
+
 

@@ -1,11 +1,10 @@
-import {getPin} from './pin.js';
-import {getNewsFeed} from './newsFeed.js';
+(()=>{
+  const start = () => {
+    const pin = window.pin.get();
+    document.querySelector('body').appendChild(pin);
+    pin.addEventListener('click', window.newsFeed.get);
+  };
 
+  setTimeout(start, 1000);
+})()
 
-const start = () => {
-  const pin = getPin();
-  document.querySelector('body').appendChild(pin);
-  pin.addEventListener('click', getNewsFeed);
-};
-
-setTimeout(start, 1000);

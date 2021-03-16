@@ -29,4 +29,8 @@
     background-color: rgb(66, 66, 66);
     border-radius: 25px;
   }
+
+  &--open {
+    display: flex;
+  }
 }
